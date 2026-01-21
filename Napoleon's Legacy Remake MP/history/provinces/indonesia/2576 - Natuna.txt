@@ -1,5 +1,5 @@
-owner = GBR
-controller = GBR
+owner = DUT
+controller = DUT
 trade_goods = fish
 life_rating = 30
 colonial = 2

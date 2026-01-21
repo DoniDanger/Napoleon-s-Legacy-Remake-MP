@@ -15,6 +15,12 @@ JAP		= "countries/Japan.txt"
 ITA		= "countries/Italy.txt"
 KUK		= "countries/Austria-Hungary.txt"
 
+# OG NLR Tags
+NSA     = "countries/Napoleonic Spain.txt"
+DUT		= "countries/The Dutch Republic.txt"
+BRI		= "countries/The British Empire.txt" #formerly union tag
+IMP		= "countries/The Imperial Federation.txt"
+
 # Napoleon's Legacy Remastered
 GBR		= "countries/GBR.txt"
 NIT		= "countries/NIT.txt"

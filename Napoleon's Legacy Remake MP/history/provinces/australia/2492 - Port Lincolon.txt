@@ -1,6 +1,6 @@
-owner = GBR
-controller = GBR
-add_core = GBR
+owner = BRI
+controller = BRI
+add_core = BRI
 add_core = AST
 trade_goods = wool
 life_rating = 30

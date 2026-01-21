@@ -1,5 +1,5 @@
-owner = SPA
-controller = SPA
+owner = NSA
+controller = NSA
 add_core = SPA
 trade_goods = sulphur
 life_rating = 35

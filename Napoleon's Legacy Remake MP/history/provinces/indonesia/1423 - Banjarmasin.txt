@@ -1,5 +1,5 @@
-owner = GBR
-controller = GBR #add_core = INO
+owner = BRI
+controller = BRI #add_core = INO
 add_core = KLM
 trade_goods = sulphur
 life_rating = 30

@@ -6,7 +6,7 @@ add_core = MUG
 trade_goods = fruit
 life_rating = 30
 1861.1.1 = {
-	owner = ENG
-	controller = ENG
+	owner = BRI
+	controller = BRI
 	colonial = 2
 }

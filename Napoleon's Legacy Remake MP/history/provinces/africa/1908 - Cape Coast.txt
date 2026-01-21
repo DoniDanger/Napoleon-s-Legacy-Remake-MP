@@ -1,5 +1,5 @@
-owner = ENG
-controller = ENG
+owner = BRI
+controller = BRI
 trade_goods = fruit
 life_rating = 35
 colonial = 1

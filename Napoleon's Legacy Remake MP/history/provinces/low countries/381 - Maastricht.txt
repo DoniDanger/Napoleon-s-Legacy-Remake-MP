@@ -1,6 +1,6 @@
 owner = FRA
 controller = FRA
-add_core = NET
+add_core = DUT
 add_core = BEL
 trade_goods = coal
 life_rating = 35
@@ -23,8 +23,8 @@ state_building = {
 }
 1861.1.1 = { 
 	railroad = 3
-	owner = NET
-	controller = NET
+	owner = DUT
+	controller = DUT
 	remove_core = BEL
 }
 

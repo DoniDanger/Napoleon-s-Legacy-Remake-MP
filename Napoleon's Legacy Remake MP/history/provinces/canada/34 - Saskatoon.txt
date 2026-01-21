@@ -1,11 +1,11 @@
-owner = CAN
-controller = CAN
+owner = BRI
+controller = BRI
 add_core = CAN
 trade_goods = grain
 life_rating = 35
 1861.1.1 = {
-	owner = ENG
-	controller = ENG
+	owner = BRI
+	controller = BRI
 	colonial = 2
 }
 1861.1.1 = {

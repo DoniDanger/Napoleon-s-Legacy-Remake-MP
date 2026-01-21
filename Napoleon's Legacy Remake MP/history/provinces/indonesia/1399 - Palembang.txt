@@ -1,5 +1,5 @@
-owner = GBR
-controller = GBR
+owner = DUT
+controller = DUT
 #add_core = INO
 trade_goods = grain
 life_rating = 30

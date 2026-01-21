@@ -1,5 +1,5 @@
-owner = GBR
-controller = GBR
+owner = BRI
+controller = BRI
 add_core = JAV
 trade_goods = coffee
 life_rating = 30
