@@ -88,6 +88,7 @@ political_decisions = {
 			has_country_flag = usca_reclaimed
             NOT = { has_country_flag = reversed_bolivarian_conquests }
 			exists = GCO
+			NOT = { year = 1870 }
 		}    
                
         allow = {
@@ -103,6 +104,7 @@ political_decisions = {
 					}
 				}
 			}	  
+			NOT = { year = 1870 }
 			NOT = { badboy = 0.5 }
         }
                
@@ -307,11 +309,13 @@ political_decisions = {
 				vassal_of = FRA
 				NOT = {is_greater_power = yes }
 			}
+			NOT = { year = 1875 }
 		}    
                
         allow = {
             war_with = NSA      
 			nationalism_n_imperialism = 1
+			NOT = { year = 1875 }
 			NOT = { badboy = 0.5 }
         }
                
@@ -320,7 +324,7 @@ political_decisions = {
             casus_belli = {
 				target = NSA
 				type = conquest_any
-				months = 120
+				months = 72
 			}
 			prestige = 15
 			badboy = 15

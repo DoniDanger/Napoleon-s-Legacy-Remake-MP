@@ -101,8 +101,8 @@ army = {
 
 }
 army = {
-	name = "Indian army"
-	location = 1309
+	name = "Norge Haeren"
+	location = 313
 	regiment = {
 		name= "1.1. Infanteridivision"
 		type = infantry

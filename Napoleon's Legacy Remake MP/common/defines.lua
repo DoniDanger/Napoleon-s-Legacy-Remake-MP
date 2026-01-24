@@ -10,7 +10,7 @@ country = {
 	BASE_COUNTRY_TAX_EFFICIENCY = 0.2, -- Basic efficiency for taxes without 'crats and tech
 	BASE_COUNTRY_ADMIN_EFFICIENCY = 0.2,
 	GOLD_TO_CASH_RATE = 1, -- Amount of money generated per gold unit
-	GOLD_TO_WORKER_PAY_RATE = 10, -- Multiplier for how much money gold pays to pops
+	GOLD_TO_WORKER_PAY_RATE = 3, -- Multiplier for how much money gold pays to pops
 	GREAT_NATIONS_COUNT = 8,
 	GREATNESS_DAYS = 365, 	   -- how many days until country risks losing status as great nation
 	BADBOY_LIMIT = 25,
@@ -52,7 +52,7 @@ country = {
 	MILITARY_REFORM_UH_FACTOR = -0.40,
 	WRONG_REFORM_RADICAL_IMPACT = 15,
 	TECH_YEAR_SPAN = 140,
-	TECH_FACTOR_VASSAL = 0, -- cost reduction factor if overlord has research the tech
+	TECH_FACTOR_VASSAL = 0.25, -- cost reduction factor if overlord has research the tech
 	MAX_SUPPRESSION = 100,
 	PRESTIGE_HIT_ON_BREAK_COUNTRY = -0.20, -- percentage reduction when country gets taken by rebels
 	MIN_MOBILIZE_LIMIT = 3,
@@ -189,10 +189,10 @@ military = {
 	RECON_SIEGE_EFFECT = 0.5, -- multiplier to effect of recon on speeding up sieges
 	SIEGE_ATTRITION = 2, -- fixed attrition on sieging units
 	BASE_MILITARY_TACTICS = 1.5, -- base mil tactics before tech
-	NAVAL_LOW_SUPPLY_DAMAGE_SUPPLY_STATUS = 0.85, -- how little supply is acceptable before getting damage to STR
-	NAVAL_LOW_SUPPLY_DAMAGE_DAYS_DELAY = 1, -- delay in days before the STR will get damage due to no supplies. Sometimes supply status may jump bcoz of the market.
-	NAVAL_LOW_SUPPLY_DAMAGE_MIN_STR = 1.0, -- when low supply, the navy will supply STR damage but no less then X% to avoid destruction (value from 0 to 100.0)
-	NAVAL_LOW_SUPPLY_DAMAGE_PER_DAY = 1, -- damage to navies STR per day if totally 0% supplies (value from 0 to 100.0)
+	NAVAL_LOW_SUPPLY_DAMAGE_SUPPLY_STATUS = 0.55, -- how little supply is acceptable before getting damage to STR
+	NAVAL_LOW_SUPPLY_DAMAGE_DAYS_DELAY = 30, -- delay in days before the STR will get damage due to no supplies. Sometimes supply status may jump bcoz of the market.
+	NAVAL_LOW_SUPPLY_DAMAGE_MIN_STR = 3.0, -- when low supply, the navy will supply STR damage but no less then X% to avoid destruction (value from 0 to 100.0)
+	NAVAL_LOW_SUPPLY_DAMAGE_PER_DAY = 0.5, -- damage to navies STR per day if totally 0% supplies (value from 0 to 100.0)
 },
 
 diplomacy = {
@@ -400,21 +400,21 @@ diplomacy = {
 	BANEMBASSY_DAYS = 365,
 	
 	DECLAREWAR_RELATION_ON_ACCEPT = -50,
-	DECLAREWAR_DIPLOMATIC_COST = 1,
+	DECLAREWAR_DIPLOMATIC_COST = 0,
 	
 	ADDWARGOAL_RELATION_ON_ACCEPT = 0,
-    ADDWARGOAL_DIPLOMATIC_COST = 1,
+    ADDWARGOAL_DIPLOMATIC_COST = 0,
 	ADD_UNJUSTIFIED_GOAL_BADBOY = 1,
 	
 	PEACE_RELATION_ON_ACCEPT = 5,
 	PEACE_RELATION_ON_DECLINE = -10,
-	PEACE_DIPLOMATIC_COST = 1,
+	PEACE_DIPLOMATIC_COST = 0,
 
 	ALLIANCE_RELATION_ON_ACCEPT = 100,
 	ALLIANCE_RELATION_ON_DECLINE = -50,
-	ALLIANCE_DIPLOMATIC_COST = 1,
+	ALLIANCE_DIPLOMATIC_COST = 0,
 	CANCELALLIANCE_RELATION_ON_ACCEPT = -20,
-	CANCELALLIANCE_DIPLOMATIC_COST = 1,
+	CANCELALLIANCE_DIPLOMATIC_COST = 0,
 
 	CALLALLY_RELATION_ON_ACCEPT = 20,
 	CALLALLY_RELATION_ON_DECLINE = -20,
@@ -422,15 +422,15 @@ diplomacy = {
 
 	ASKMILACCESS_RELATION_ON_ACCEPT = 30,
 	ASKMILACCESS_RELATION_ON_DECLINE = -10,
-	ASKMILACCESS_DIPLOMATIC_COST = 1,
+	ASKMILACCESS_DIPLOMATIC_COST = 0,
 	CANCELASKMILACCESS_RELATION_ON_ACCEPT = 0,
-	CANCELASKMILACCESS_DIPLOMATIC_COST = 1,
+	CANCELASKMILACCESS_DIPLOMATIC_COST = 0,
 
 	GIVEMILACCESS_RELATION_ON_ACCEPT = 10,
 	GIVEMILACCESS_RELATION_ON_DECLINE = 0,
-	GIVEMILACCESS_DIPLOMATIC_COST = 1,
+	GIVEMILACCESS_DIPLOMATIC_COST = 0,
 	CANCELGIVEMILACCESS_RELATION_ON_ACCEPT = -10,
-	CANCELGIVEMILACCESS_DIPLOMATIC_COST = 1,
+	CANCELGIVEMILACCESS_DIPLOMATIC_COST = 0,
 
 	WARSUBSIDY_RELATION_ON_ACCEPT = 20,
 	WARSUBSIDY_DIPLOMATIC_COST = 1,

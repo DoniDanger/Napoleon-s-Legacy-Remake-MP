@@ -29,6 +29,8 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
+set_country_flag = dominion_rules
+
 ruling_party = HOL_conservative
 upper_house = {
 	fascist = 0
