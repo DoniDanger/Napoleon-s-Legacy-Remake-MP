@@ -1,4 +1,4 @@
-owner = BRI
-controller = BRI #add_core = INO
+owner = DUT
+controller = DUT  #add_core = INO
 trade_goods = grain
 life_rating = 30

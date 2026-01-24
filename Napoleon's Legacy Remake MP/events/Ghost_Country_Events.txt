@@ -1,0 +1,215 @@
+#Autoclick Events
+#Delete Ghost unit events		FULL CREDIT TO KEVIN - VICTORIA UNIVERSALIS
+#TAG's ordered according to mod\common\countries.txt
+#country_event = {
+#	id = 996407
+#	title = "776405"
+#	desc = "EVTDESC776405"
+#	picture = "xinhai"
+#	
+#	trigger = {
+#		tag = GHO
+#		NOT = { has_country_flag = usa_immigration_buff }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}	
+#	immediate = {
+#		name = "EVTOPTA776405"
+#		set_country_flag = usa_immigration_buff
+#		USA = {
+#			add_country_modifier = {
+#				name = usa_immigration_buff
+#				duration = -1
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = "Thanks!"
+#	}
+#}
+
+country_event = {
+		id = 1000090
+		title = "AI Check every approx. 1 months"
+		desc = "Checking..."
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = "apply"
+			#low relations with GHO
+			any_country = {
+				limit = {
+					exists = yes
+				}
+				relation = { who = THIS value = -400 }
+			}
+			# if crisis is disabled
+			any_country = {
+				limit = {
+					exists = yes
+					has_global_flag = crisis_disabled	
+				}
+				any_state = { flashpoint_tension = -100 }
+			}
+			#cleanup bugged slave states
+			any_country = {
+				limit = {
+					any_state = { is_slave = yes }
+					slavery = no_slavery
+				}
+				any_state = {
+					limit = {
+						is_slave = yes
+					}
+					is_slave = no
+				}
+			}
+			#remove all sphere/influence
+			any_greater_power = {
+				diplomatic_influence = { who = THIS value = -400 }
+			}
+			#cleanup vassals with nonexistant overlords
+			any_country = {
+				limit = {
+					is_vassal = yes
+					exists = yes
+					overlord = { exists = no }
+				}
+			country_event = 1000091
+			}
+			#monthly substate payment
+			#substate payment
+			any_country = {
+				limit = {
+					exists = yes
+					OR = {
+						is_substate = yes
+						AND = {
+							is_vassal = yes
+							is_substate = no
+							total_pops = 250000
+						}
+					}
+					NOT = { has_country_flag = exempt_from_vassal_contribution }
+				}
+				random_owned = {
+					limit = {
+						owner = {
+							money = 100000
+						}
+					}
+					owner = {
+						treasury = -100000
+						overlord = { treasury = 100000 }
+					}
+				}
+			}
+			# stop vassal payments
+			any_country = {
+				limit = {
+					exists = yes
+					is_vassal = yes
+					overlord = { has_country_flag = vassals_dont_need_to_pay }
+				}
+				set_country_flag = exempt_from_vassal_contribution
+			}
+			#ghost units cleanup
+			any_country = {
+				limit = {
+					exists = no
+					is_greater_power = no
+					OR = {
+						is_mobilised = yes
+						total_amount_of_ships = 1
+					}
+				}
+			annex_to = FROM
+			}
+			GHO = { country_event = { id = 1000090 days = 30 } }
+			GHO = { country_event = { id = 91303 days = 30 } }
+		}
+}
+country_event = {
+	id = 1000091
+	title = "Freedom!"
+	desc = "We have acquired independence!"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		overlord = { release_vassal = THIS }
+	}
+	
+	option = {
+		name = "Nice."
+	}
+}	
+country_event = {
+	id = 91303
+	title = "Ghost Country Trigger"
+	
+	is_triggered_only = yes
+
+	option = {
+		any_country = {
+			limit = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			inherit = GHO
+		}
+		any_country = {
+			limit = {
+				owns = 3246
+			}
+			country_event = { id = 91304 days = 3 }
+		}
+	}
+}
+
+country_event = {
+	id = 91304
+	title = "Ghost Country Appears"
+
+	is_triggered_only = yes
+
+	option = {
+		release_vassal = THIS
+		any_country = {
+			limit = { war_with = THIS }
+			end_war = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 91305
+	title = "Ghost Country Cleanup"
+
+	trigger = {
+		owns = 3234
+		NOT = { tag = GHO }
+		OR = {
+			AND = {
+				is_mobilised = no
+				NOT = { total_amount_of_divisions = 1 }
+				war = no
+			}
+			NOT = { capital = 3234 }
+		}
+	}
+
+	option = {
+		3234 = { secede_province = GHO }
+		GHO = { civilized = yes }
+	}
+}

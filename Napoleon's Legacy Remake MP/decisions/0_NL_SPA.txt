@@ -2,7 +2,11 @@ political_decisions = {
 	form_iberia = {
 		picture = iberia
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = NSA
+			}
+			IBR = { exists = no }
 		}
 		allow = {
 			war=no
@@ -40,17 +44,22 @@ political_decisions = {
 				}
 			}
 			POR = { all_core = { add_core = THIS } } 
-			SPA = { all_core = { add_core = THIS remove_core = SPA } }
+			SPA = { any_owned = { all_core = { add_core = THIS remove_core = SPA } }}
 			add_accepted_culture = portuguese
+			add_accepted_culture = spanish
 		}
 	}
 	expand_citizenship1 = {
 		picture = cuba_decision
 		potential = {
 			primary_culture = spanish	
-			NOT = { accepted_culture=caribeno }
+			OR = {
+				owns = 2209
+				state_n_government = 1
+			}	
 		}
 		allow = {
+			owns = 2209
 			CUB = {
                 all_core = {
                     OR = {
@@ -64,7 +73,13 @@ political_decisions = {
                     }
                 }
             }
-			state_n_government=1
+			OR = {
+				AND = {
+					tag = SPA
+					state_n_government=1
+				}
+				nationalism_n_imperialism = 1
+			}
 		}
 		effect = {
 			CUB = {
@@ -80,6 +95,8 @@ political_decisions = {
 			add_accepted_culture=caribeno
 			add_accepted_culture=afro_caribeno
 			add_accepted_culture = afro_caribbean
+			set_country_flag = cuba_unlocked
+			set_country_flag = caribeno_are_accepted_SPA
 			badboy = 5
 		}
 	} 
@@ -87,7 +104,7 @@ political_decisions = {
 		picture = philipines_decision
 		potential = {
 			primary_culture = spanish	
-			accepted_culture = caribeno
+			has_country_flag = caribeno_are_accepted_SPA
 			NOT = { accepted_culture = filipino}
 		}
 		allow = {

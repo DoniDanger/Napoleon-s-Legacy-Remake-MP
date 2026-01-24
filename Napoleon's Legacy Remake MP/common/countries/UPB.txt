@@ -2,7 +2,8 @@
 
 #========================= H E A D E R =========================
 
-color = { 50  205  50 }
+#color = { 50  205  50 }
+color = { 134  190  178 }
 graphical_culture = SouthAmericanGC
 
 

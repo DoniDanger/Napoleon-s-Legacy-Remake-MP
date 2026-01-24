@@ -2,7 +2,11 @@ political_decisions = {
 	establish_la_guardia_civil = {
 		picture = establish_la_guardia_civil
 		potential = {
-			tag = SPA
+			OR = {
+				tag = SPA
+				tag = NSA
+			}
+			owns = 487
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -34,8 +38,11 @@ political_decisions = {
 	education_decree_1863 = {
 		picture = map_phillipines
 		potential = {
-			tag = SPA
-			state_n_government = 1
+			OR = {
+				tag = SPA
+				tag = NSA
+			}
+			owns = 1455
 			OR = {
 				government = absolute_monarchy
 				government = hms_government
@@ -52,6 +59,7 @@ political_decisions = {
 
 		allow = {
 			any_owned_province = { region = SPA_1455 }
+			state_n_government = 1
 			invention = mission_to_civilize
 			money = 50000
 		}

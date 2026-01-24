@@ -81,8 +81,26 @@ vassal = {
 	end_date = 1847.7.26
 }
 
+## British Empire
+
+# UK-Native Confederation
 vassal = {
-	first = ENG
+	first = BRI
+	second = ICF
+	start_date = 1822.1.1
+	end_date = 1949.1.1
+}
+
+# UK - New England
+substate = {
+	first = BRI
+	second = NEN
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+vassal = {
+	first = BRI
 	second = CAN
 	start_date = 1836.1.1
 	end_date = 1950.1.1
@@ -94,3 +112,35 @@ vassal = {
 	start_date = 1836.1.1
 	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
 }
+
+##French Empire
+vassal = {
+	first = FRA
+	second = NSA
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+vassal = {
+	first = FRA
+	second = NIT
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+vassal = {
+	first = FRA
+	second = TUS
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+substate = {
+	first = FRA
+	second = NET
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+#substate = {
+#	first = FRA
+#	second = DLM
+#	start_date = 1773.1.1
+#	end_date = 1949.1.1
+#}

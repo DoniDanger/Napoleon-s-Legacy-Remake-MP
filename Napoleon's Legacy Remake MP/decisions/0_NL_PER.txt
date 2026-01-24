@@ -13,6 +13,7 @@ political_decisions = {
 					foreign_officers = foreign_officers_two
 					army_schools = army_schools_two
 				}
+				state_n_government = 1
 			}
 			#owns = 1209
 		}

@@ -2,6 +2,7 @@ name = "Ottoman Restoration of Tripoli"
 
 1835.10.2 = {
 	add_attacker = TUR
+	add_attacker = WAL
 	add_defender = TRI
 	
 	# actor

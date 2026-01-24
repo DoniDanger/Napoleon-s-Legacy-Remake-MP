@@ -1,0 +1,528 @@
+political_decisions = {
+	crown_empress_of_india = {
+		potential = {
+			tag = BRI
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
+			NOT = {
+				has_country_flag = empress_of_india
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 40
+			owns = 1305
+			owns = 1311
+			owns = 1257
+			owns = 1291
+			owns = 1236
+			owns = 1297
+			owns = 1227
+		}
+		effect = {
+			prestige = 100
+			any_pop = {
+				militancy = -2
+			}
+			set_country_flag = empress_of_india
+		}
+	}
+
+	integrate_new_england = {
+		potential = {
+			tag = BRI
+			rank = 8
+			owns = 46
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			NEN = {
+				war = no
+				all_core = {
+                    OR = {
+                        owned_by = THIS
+                       		owner = {
+                            	OR = {
+                                	vassal_of = THIS
+									in_sphere = THIS
+                            	}
+                        	}
+						empty = yes
+                    }	
+				}
+			}
+		}
+		effect = {
+			inherit = NEN
+			any_owned = {
+				limit = {
+					is_core = NEN
+				}
+				add_core = THIS
+			}
+			set_global_flag = the_Britains_reunified
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	empire_conquest_scotland = {
+		potential = {
+			tag = BRI
+			rank = 8
+			NOT = { has_country_flag = conquest_empire_scotland }
+		}
+		allow = {
+			state_n_government = 1
+			owns = 269
+			owns = 267
+		}
+		effect = {
+			SCO = { all_core = { add_core = THIS }}
+			ENG_277 = { add_core = THIS }
+			ENG_280 = { add_core = THIS }
+			prestige = 15
+			set_country_flag = conquest_empire_scotland
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	empire_conquest_england = {
+		potential = {
+			tag = BRI
+			rank = 8
+			NOT = { has_country_flag = conquest_empire_england }
+		}
+		allow = {
+			state_n_government = 1
+			owns = 300
+			owns = 299
+		}
+		effect = {
+			ENG_300 = { add_core = THIS }
+			ENG_301 = { add_core = THIS }
+			ENG_291 = { add_core = THIS }
+			ENG_284 = { add_core = THIS }
+			ENG_273 = { add_core = THIS }
+			prestige = 15
+			set_country_flag = conquest_empire_england
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	union_conquest_canada = {
+		potential = {
+			tag = GBR
+			rank = 8
+			NOT = { has_country_flag = conquest_empire_canada }
+		}
+		allow = {
+			state_n_government = 1
+			owns = 46
+			owns = 58
+		}
+		effect = {
+			CAN = { all_core = { add_core = THIS }}
+			prestige = 15
+			set_country_flag = conquest_empire_canada
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	union_conquest_australia = {
+		potential = {
+			tag = GBR
+			rank = 8
+			NOT = { has_country_flag = conquest_empire_australia }
+		}
+		allow = {
+			state_n_government = 1
+			owns = 2476
+			owns = 2468
+		}
+		effect = {
+			AST = { all_core = { add_core = THIS }}
+			prestige = 15
+			set_country_flag = conquest_empire_australia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	empire_conquest_union = {
+		potential = {
+			tag = BRI
+			rank = 8
+			BRI = { exists = yes }
+			NOT = { has_country_flag = conquest_empire_bri }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			owns = 300
+			owns = 299
+			owns = 269
+			owns = 267
+		}
+		effect = {
+			casus_belli = {
+				target = GBR
+				type = conquest_any
+				months = 120
+			}
+			badboy = 10
+			set_country_flag = conquest_empire_bri
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	empire_absorbs_union = {
+		potential = {
+			tag = BRI
+			rank = 8
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			GBR = {
+				all_core = {
+                    OR = {
+                        owned_by = THIS
+                       		owner = {
+                            	OR = {
+                                	vassal_of = THIS
+                            	}
+                        	}
+						empty = yes
+                    }	
+				}
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = GBR
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				remove_core = GBR
+			}
+			capital = 300
+			prestige = 50
+			set_global_flag = the_Britains_reunified
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	union_conquest_empire = {
+		potential = {
+			tag = GBR
+			rank = 8
+			GBR = { exists = yes }
+			NOT = { has_country_flag = conquest_empire_gbr }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			owns = 46
+			owns = 58
+			owns = 2476
+			owns = 2468
+		}
+		effect = {
+			casus_belli = {
+				target = BRI
+				type = conquest_any
+				months = 120
+			}
+			badboy = 10
+			set_country_flag = conquest_empire_gbr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	union_absorbs_empire = {
+		potential = {
+			tag = GBR
+			rank = 8
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			BRI = {
+				all_core = {
+                    OR = {
+                        owned_by = THIS
+                       		owner = {
+                            	OR = {
+                                	vassal_of = THIS
+                            	}
+                        	}
+						empty = yes
+                    }	
+				}
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = BRI
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				remove_core = BRI
+			}
+			capital = 300
+			prestige = 50
+			set_global_flag = the_Britains_reunified
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_federation = {
+		potential = {
+			NOT = {
+				has_country_flag = form_federation_done
+			}
+			OR =
+			{
+			tag = BRI
+			tag = GBR
+			}
+			NOT = {
+				exists = IMP
+			}
+		}
+	
+		allow = {
+			capital = 300
+			steel_steamers = 1
+			social_science = 1
+			invention = prophylaxis_against_malaria
+			invention = mission_to_civilize
+			year = 1870
+			has_global_flag = the_Britains_reunified
+		}
+	
+		effect = {
+			prestige = 45
+			add_accepted_culture = irish
+			add_accepted_culture = french_canadian
+			add_accepted_culture = sinhala
+			add_accepted_culture = afro_antillean
+			add_accepted_culture = anglo_canadian
+			add_accepted_culture = afro_caribbean
+			change_tag = IMP
+			all_core = {
+				remove_core = BRI
+				remove_core = GBR
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						culture = irish
+						culture = french_canadian
+						culture = sinhala
+						culture = afro_antillean
+						culture = khoisan
+						culture = afro_caribbean
+					}
+				}
+				militancy = -2
+			}
+			set_country_flag = form_federation_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	move_capital = {
+
+		potential = {
+        		is_greater_power = yes
+			tag = BRI
+			owns = 300
+			NOT = { capital = 300 }
+			NOT = {
+				has_country_flag = capital_moved_back
+			}
+        	}
+
+		allow = {
+        		tag = BRI
+                	owns = 300
+        	}
+
+        	effect = {
+        		prestige = 50
+        		capital = 300
+			set_country_flag = capital_moved_back
+       		}
+
+        	ai_will_do = {
+        		factor = 1
+        	}
+	}
+
+	carribean_treaty = {
+                potential = {
+                        tag = BRI
+                        NOT = { has_country_flag = carribean_treaty }
+			exists = FRA
+			AND = {
+				owns = 77
+				owns = 2230
+				owns = 2228
+			}
+                }
+               
+                allow = {
+			year = 1837
+                        war = no
+                        money = 100000	
+                }
+               
+                effect = {
+                        set_country_flag = carribean_treaty
+                        FRA = {
+                        	country_event = 66550
+                        }
+			badboy = -4
+                }
+               
+                ai_will_do = {
+                        factor = 1
+                }
+        }
+		
+	#the_british_cession = {
+	#	potential = {
+	#		OR = {
+	#		tag = BRI
+	#		tag = GBR
+	#		}
+	#		OR = {
+	#			owns = 118
+	#			owns = 157
+	#		}
+	#		NOT = {
+	#			has_country_flag = britain_ceded
+	#			year = 1840
+	#		}
+	#		USA = {
+	#			owns = 155
+	#		}
+	#		
+	#	}
+	#	
+	#	allow = {
+	#		NOT = {
+	#			war_with = USA
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		relation = {
+	#			who = USA
+	#			value = 200
+	#		}
+	#		118 = {
+	#			remove_core = THIS
+	#		}
+	#		157 = {
+	#			remove_core = THIS
+	#		}
+	#		118 = {
+	#			secede_province = USA
+	#		}
+	#		157 = {
+	#			secede_province = USA
+	#		}
+	#		badboy = -2
+	#		prestige = 40
+	#		set_country_flag = britain_ceded
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#		modifier = {
+	#			factor = 0
+	#			NOT = {
+	#				relation = {
+	#					who = USA
+	#					value = 0
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+
+	mechanize_YFE = {
+		potential = {
+			OR = {
+				tag = BRI
+				tag = GBR 
+			}
+			owns = 37
+			owns = 39
+			owns = 40
+			owns = 32
+			owns = 34
+			owns = 33
+			owns = 27
+			NOT = {
+				has_country_flag = mechanized_YFE
+			}
+		}
+		
+		allow = {
+			37 = {
+				has_building = railroad
+			}
+			39 = {
+				has_building = railroad
+			}
+			40 = {
+				has_building = railroad
+			}
+			32 = {
+				has_building = railroad
+			}
+			34 = {
+				has_building = railroad
+			}
+			33 = {
+				has_building = railroad
+			}
+			27 = {
+				has_building = railroad
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			set_country_flag = mechanized_YFE
+		}
+	}
+
+}
+

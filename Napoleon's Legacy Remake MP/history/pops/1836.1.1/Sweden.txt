@@ -232,7 +232,7 @@
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 10000
+		size = 12500
 	}
 
 	farmers = {

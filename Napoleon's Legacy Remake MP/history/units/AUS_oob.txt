@@ -464,3 +464,47 @@ army = {
 		home = 622
 	}
 }
+
+army = {
+	name = "V. Armee"
+	location = 792
+	regiment = {
+		name= "1.1 Cavaleriedivision"
+		type = hussar
+		home = 641
+	}
+	regiment = {
+		name= "1.1. Infanteriedivision"
+		type = infantry
+		home = 641
+	}
+
+	regiment = {
+		name= "1.1. Artillerydivision"
+		type = artillery
+		home = 639
+	}
+
+	regiment = {
+		name= "1.2. Artillerydivision"
+		type = artillery
+		home = 630
+	}
+
+	regiment = {	
+		name= "1.3. Artillerydivision"
+		type = artillery
+		home = 629
+	}
+	
+	regiment = {
+		name= "1.4. Artillerydivision"
+		type = artillery
+		home = 627
+	}
+	regiment = {
+		name= "1.5. Artillerydivision"
+		type = artillery
+		home = 639
+	}
+}

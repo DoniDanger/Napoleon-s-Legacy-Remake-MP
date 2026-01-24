@@ -2,16 +2,16 @@
 
 #========================= H E A D E R =========================
 
-capital = 2468
+capital = 300
 primary_culture = british
 culture=Scotish
 religion = protestant
 government = democracy
-plurality = 10
+plurality = 40
 nationalvalue = nv_liberty
-literacy = 0.5
+literacy = 0.52
 civilized = yes 
-prestige = 20
+prestige = 40
 schools = naval_tech_school
 set_country_flag = new_world_nation
 oob = "GBR_oob.txt"

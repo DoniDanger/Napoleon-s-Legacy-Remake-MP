@@ -1,14 +1,14 @@
 capital = 46
 primary_culture = british
 culture = anglo_canadian
-culture = scottish
+culture = Scotish
 religion = protestant
 government = hms_government
 plurality = 25.0
 nationalvalue = nv_order
 literacy = 0.6
 civilized = yes
-prestige = 30
+prestige = 45
 
 # Political reforms
 slavery = yes_slavery
@@ -82,6 +82,8 @@ upper_house = {
 	communist = 0
 }
 
+oob = "CAN_oob.txt"
+
 1861.1.1 = {
 	oob = "/1861/CAN_oob.txt"
 }
@@ -90,5 +92,3 @@ upper_house = {
 
 #Inventions
 }
-
-oob = "CAN_oob.txt"

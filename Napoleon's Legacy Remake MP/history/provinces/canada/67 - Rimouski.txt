@@ -1,5 +1,6 @@
 owner = BRI
 controller = BRI
+add_core = BRI
 add_core = CAN
 add_core = QUE
 trade_goods = grain

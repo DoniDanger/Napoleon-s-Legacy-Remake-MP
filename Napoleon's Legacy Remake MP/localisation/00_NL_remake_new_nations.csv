@@ -1,13 +1,22 @@
 Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
-GBR_ADJ;British;;;;;;;;;;;;;x
+IMP;The Imperial Federation;;;;;;x;;;;
+IMP_ADJ;Imperial;;;;;;;x;;;;
+NSA;Napoleonic Spain;;;;;;;;;x;;;;;;;;
+NSA_ADJ;Spanish;;;;;;;;;x;;;;;;;;
+NSA_conservative;Partido Espa隳l;;;;;;;;;x;;;;;;;;
+NSA_liberal;Partido Francesa;;;;;;;;;x;;;;;;;;
+NSA_reactionary;Comuni鏮 Borb鏮;;;;;;;;;x;;;;;;;;
+DUT;The Dutch Republic;;;;x;;;;
+DUT_ADJ;Dutch;;;x;;;;
+GBR_ADJ;Union;;;;;;;;;;;;;x
 GBR;Great Britain;;;;;;;;;;;;;x
-GBR_proletarian_dictatorship;British Commonwealth;;;;;;;;;;;;;x
-GBR_presidential_dictatorship;British Commonwealth;;;;;;;;;;;;;x
-GBR_fascist_dictatorship;British Commonwealth;;;;;;;;;;;;;x
+GBR_proletarian_dictatorship;The British Union;;;;;;;;;;;;;x
+GBR_presidential_dictatorship;The British Union;;;;;;;;;;;;;x
+GBR_fascist_dictatorship;British Union of Fascists;;;;;;;;;;;;;x
 GBR_absolute_monarchy;Great Britain;;;;;;;;;;;;;x
 GBR_prussian_constitutionalism;Great Britain;;;;;;;;;;;;;x
 GBR_hms_government;Great Britain;;;;;;;;;;;;;x
-GBR_democracy;British Commonwealth;;;;;;;;;;;;;x
+GBR_democracy;The British Union;;;;;;;;;;;;;x
 GBR_conservative_92;Conservatives;;;;;;;;;;;;;x
 GBR_liberal_79;Liberals;;;;;;;;;;;;;x
 GBR_liberal_87;National Liberals;;;;;;;;;;;;;x
@@ -40,11 +49,12 @@ MAH_socialist_99;National Socialists;;;;;;;;;;;;;x
 MAH_reactionary_84;Monarchy Leadership;;;;;;;;;;;;;x
 MAH_communist_86;Communists;;;;;;;;;;;;;x
 MAH_fascist_72;Fascists;;;;;;;x;;;;;;
-UPB_ADJ;Portuguese-Brazilian;;;;;;;x;;;;;;
-UPB;Portugal-Brazil;;;;;;;;;;;;;x
-UPB_absolute_monarchy;Union of Portugal and Brazil;;;;;;;;;;;;;x
-UPB_prussian_constitutionalism;Union of Portugal and Brazil;;;;;;;;;;;;;x
-UPB_hms_government;Union of Portugal and Brazil;;;;;;;;;;;;;x
+UPB_ADJ_democracy;Portuguese-Brazilian;;;;;;;x;;;;;;
+UPB_ADJ;Unido;Unido;Unido;;Unido;;;;;;;;;x;;;;
+UPB;Reino Unido;;;;;;;;;;;;;x
+UPB_absolute_monarchy;Reino Unido;;;;;;;;;;;;;x
+UPB_prussian_constitutionalism;Reino Unido;;;;;;;;;;;;x
+UPB_hms_government;Reino Unido;;;;;;;;;;;;;x
 UPB_democracy;Portugal-Brazil;;;;;;;;;;;;;x
 UPB_conservative_92;Conservatives;;;;;;;;;;;;;x
 UPB_liberal_79;Liberals;;;;;;;;;;;;;x
@@ -84,6 +94,10 @@ SYC_socialist_99;National Socialists;;;;;;;;;;;;;x
 SYC_reactionary_84;Monarchy Leadership;;;;;;;;;;;;;x
 SYC_communist_86;Communists;;;;;;;;;;;;;x
 SYC_fascist_72;Fascists;;;;;;;;;;;;;x
+BRI;The British Empire;;x
+BRI_ADJ;Imperial;;;x
+BRI_democracy;The British Commonwealth;;x
+BRI_democracy_ADJ;Commonwealth;;;x
 HAN_ADJ;Westfalian;;;;;;;;;;;;;x
 HAN;Westphalia;;;;;;;;;;;;;x
 GCF;Confederation of the Rhine;;;;;;;x;;;;;;

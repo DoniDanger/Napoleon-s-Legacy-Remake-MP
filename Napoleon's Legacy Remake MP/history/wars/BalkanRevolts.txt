@@ -2,6 +2,7 @@ name = "Balkan revolts"
 
 1835.1.1 = {
 	add_attacker = TUR
+	add_attacker = WAL
 	add_defender = SER
     add_defender = MON
     add_defender = BOS

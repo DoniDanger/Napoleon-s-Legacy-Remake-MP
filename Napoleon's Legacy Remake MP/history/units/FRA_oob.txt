@@ -9,6 +9,26 @@ NET = {
 	level = 5
 	influence_value = 15
 }
+NIT = { 
+	value = 125
+	level = 5
+	influence_value = 15
+}
+NSA = { 
+	value = 125
+	level = 5
+	influence_value = 15
+}
+TUS = { 
+	value = 125
+	level = 5
+	influence_value = 15
+}
+PLC = { 
+	value = 200
+	level = 4
+	influence_value = 100
+}
 HAN = {
 	value = 125
 	level = 5

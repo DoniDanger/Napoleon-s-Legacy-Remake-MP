@@ -1355,6 +1355,13 @@ oceanic = {
 		last_names = { Wherowhero Kenena Raouparah Herangi Ataarangikaahu 
 		}
 	}
+	aborigine = {
+		color = {78 24 92}
+		first_names = { Nemarluk Umbarra Wylie Yagan Tollamareena Pemulwy Mokare Derrimut Bennelong Billibellary
+		}
+		last_names = { Bunurong Lanne Noongar Mullagh Windich Wonga
+		}
+	}
 	micronesian = {
 		color = {68 213 88}
 		first_names = { Tem Makiatia Takahihi Tikoro Hakana Hakapeke Wekeia Poiaka Maehua Tawehi

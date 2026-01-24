@@ -1,5 +1,6 @@
-owner = DUT
-controller = DUT
+owner = NET
+controller = NET
+add_core = NET
 add_core = DUT
 trade_goods = cattle
 life_rating = 38

@@ -142,7 +142,7 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				NOT = {
-					tag = ENG
+					tag = GBR
 				}
 			}
 		}
@@ -287,7 +287,7 @@ political_decisions = {
 				value = 50
 			}
 			relation = {
-				who = ENG
+				who = GBR
 				value = 50
 			}
 			any_pop = {

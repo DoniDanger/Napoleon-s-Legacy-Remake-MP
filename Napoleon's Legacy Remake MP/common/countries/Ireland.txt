@@ -2,6 +2,19 @@ color = { 112  150  105 }
 graphical_culture = Generic
 
 party = {
+	name = "Society of United Irishmen"
+	start_date = 1830.1.1
+	end_date = 1990.1.1
+
+	ideology = conservative
+
+	economic_policy = state_capitalism
+	trade_policy = protectionism
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
+	war_policy = pro_military
+}
+party = {
 	name = "IRE_liberal"
 	start_date = 1830.1.1
 	end_date = 1859.1.1

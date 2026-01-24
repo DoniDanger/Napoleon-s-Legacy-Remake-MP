@@ -307,6 +307,47 @@ army = {
 	}
 }
 
+army = {
+	name = "V. Korps"
+	location = 546
+
+	regiment = {
+		name= "XXII. Linieninfanteriebrigade"
+		type = hussar
+		home = 550
+	}
+
+	regiment = {
+		name= "XXIII. Linieninfanteriebrigade"
+		type = artillery
+		home = 551
+	}
+
+	regiment = {
+		name= "IV. Artilleriebrigade"
+		type = artillery
+		home = 549
+	}
+
+	regiment = {
+		name= "I. Kavalleriebrigade"
+		type = artillery
+		home = 552
+	}
+
+	regiment = {
+		name= "II. Kavalleriebrigade"
+		type = artillery
+		home = 683
+	}
+
+	regiment = {
+		name= "III. Kavalleriebrigade"
+		type = artillery
+		home = 682
+	}
+}
+
 navy = {
 	name = "Koniglich Preussische Marine"
 	location = 695

@@ -1,6 +1,7 @@
-owner = BRI
-controller = BRI
+owner = DUT
+controller = DUT
+add_core = DUT
 add_core = SAF
 trade_goods = fruit
 life_rating = 35
-colonial = 2
+

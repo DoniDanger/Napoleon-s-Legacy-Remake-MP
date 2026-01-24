@@ -189,3 +189,11 @@ NORMAL_WAR_CONQUEST_NAME;$ORDER$Conquest of $SECOND_COUNTRY$;;;;;;;x
 NORMAL_WAR_NAME_COMMUNISM;The $ORDER$$FIRST$-$SECOND$ Revolutionary War;;;;;;;x
 AGRESSION_WAR_NAME_COMMUNISM;The $ORDER$$FIRST$-$SECOND$ Revolutionary War;;;;;;;x
 demand_concession_casus_belli_china_short;Demand $STATE$ from China;;;;;;;x
+acquire_core_substate_region;Acquire Substate Region;Acquerir une region comme Sous-Etat;Beschafft eine Unterstaatsregion;;;;;;;;;;;x
+acquire_core_substate_region_desc;Acquire a region from enemy ¡±Ysubstate¡±W;Acquerir une region d'un ¡±YSous-Etat¡±W ennemi;Beschafft eine Region des Feindes ¡±Ysubstate¡±W;;;;;;;;;;;x
+acquire_core_substate_region_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x
+acquire_core_substate_region_setup;Acquire $STATE$ from $RECIPIENT$;Prendre $STATE$ de $RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;Adquirir $STATE$ de manos de $RECIPIENT$;;;;;;;;;x
+conquest_any;Conquest;Conquete;Annektieren;;;;;;;;;;;
+conquest_any_short;Annex $RECIPIENT$;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;;;;;;;;;;
+conquest_any_desc;Annex a single-state ¡±Ycountry¡±W;Annexer un ¡±Ypays¡±W a un seul Etat;Annektieren Sie ein Einzelstaat-¡±YLand¡±W;;;;;;;;;;;
+conquest_any_setup;Annex $RECIPIENT$;Annexer $RECIPIENT$;$RECIPIENT$ annektieren;;;;;;;;;;;

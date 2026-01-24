@@ -1,43 +1,3 @@
-#Sphere of Influence
-MEX = {
-	value = 100	
-	influence_value = 25
-}
-ECU = {
-	value = 100	
-	influence_value = 25
-}
-PEU = {
-	value = 100	
-	influence_value = 25
-}
-BOL = {
-	value = 100	
-	influence_value = 25
-}
-CHL = {
-	value = 100	
-	influence_value = 25
-}
-PRG = {
-	value = 100	
-	influence_value = 25
-}
-UCA = {
-	value = 100	
-	influence_value = 25
-}
-CLM = {
-	value = 100	
-	influence_value = 25
-}
-FRA = {
-	value = 100
-}
-ALD = {
-	value = 75
-}
-
 leader = {
 	name = "Baldomero Espartero"
 	#picture = spa_gen_espartero
@@ -151,144 +111,37 @@ leader = {
 	background = attack_1.1
 }
 
-#Army
-army = {
-	name = "Ejercito Cristino del Centro"
-	location = 487
-	regiment = {
-		name= "1. Granaderos del Rey"
-		type = hussar
-		home = 487
-	}
-
-	regiment = {
-		name= "2. Granaderos del Rey"
-		type = infantry
-		home = 489
-	}
-
-	regiment = {
-		name= "3. Guardia Real"
-		type = infantry
-		home = 481
-	}
-
-	regiment = {
-		name= "1. Brigada de Infanteria 'El Ramillete'"
-		type = infantry
-		home = 503
-	}
-
-	regiment = {
-		name= "2. Brigada de Infanteria"
-		type = infantry
-		home = 509
-	}
-
-	regiment = {
-		name= "3. Brigada de Infanteria"
-		type = artillery
-		home = 513
-	}
-
-	regiment = {
-		name= "1. Brigada de Ingenieros"
-		type = artillery
-		home = 495
-	}
-
-	regiment = {
-		name= "1. Granaderos del Rey"
-		type = artillery
-		home = 487
-	}
-
-	regiment = {
-		name= "2. Granaderos del Rey"
-		type = artillery
-		home = 489
-	}
-
-	regiment = {
-		name= "3. Granaderos del Rey"
-		type = artillery
-		home = 488
-	}
+#Sphere of Influence
+MEX = {
+	value = 75		#relation
+}
+GCO = {
+	value = 100		#relation
+}
+PEU = {
+	value = 100		#relation
+}
+CHL = {
+	value = 100		#relation
+}
+PRG = {
+	value = 100		#relation
+}
+UCA = {
+	value = 100		#relation
+}
+UPB = {
+	value = 100		#relation
 }
 
 army = {
-	name = "Ejercito del Norte"
-	location = 495
-	
-	regiment = {
-		name= "4. Brigada de Infanteria 'San Jorge'"
-		type = hussar
-		home = 487
-	}
-
-	regiment = {
-		name= "1. Brigada de Artilleria"
-		type = infantry
-		home = 476
-	}
-	
-	regiment = {
-		name= "5. Brigada de Infanteria"
-		type = infantry
-		home = 482
-	}
-	
-	regiment = {
-		name= "6. Brigada de Infanteria 'La Granja'"
-		type = infantry
-		home = 483
-	}
-
-	regiment = {
-		name= "7. Brigada de Infanteria"
-		type = infantry
-		home = 497
-	}
-
-	regiment = {
-		name= "8. Brigada de Infanteria"
-		type = artillery
-		home = 512
-	}
-
-	regiment = {
-		name= "9. Brigada de Infanteria"
-		type = artillery
-		home = 514
-	}
-
-	regiment = {
-		name= "10. Brigada de Infanteria"
-		type = artillery
-		home = 510
-	}
-
-	regiment = {
-		name= "11. Brigada de Infanteria"
-		type = artillery
-		home = 516
-	}
-	
-	regiment = {
-		name= "12. Brigada de Infanteria"
-		type = artillery
-		home = 515
-	}
-}
-
-army = {
-	name = "Ejercito de Cuba"
-	location = 480
+	name = "Ejército de Cuba"
+	location = 2209
 	
 	regiment = {
 		name = "1. Brigada Colonial"
-		type = hussar
-		home = 474
+		type = infantry
+		home = 1455
 	}
 	
 	regiment = {
@@ -296,88 +149,129 @@ army = {
 		type = infantry
 		home = 2209
 	}
-	
 	regiment = {
 		name = "3. Brigada Colonial"
 		type = infantry
-		home = 475
+		home = 1456
 	}
+	regiment = {
+		name = "12. Brigada Colonial"
+		type = artillery
+		home = 2209
+	}
+	regiment = {
+		name = "10. Brigada Colonial"
+		type = artillery
+		home = 1457
+	}
+	regiment = {
+		name = "11. Brigada Colonial"
+		type = artillery
+		home = 2222
+	}
+}
 
+
+
+army = {
+	name = "Ejército de Filipinas"
+	location = 1455
+	
 	regiment = {
 		name = "4. Brigada Colonial"
 		type = infantry
 		home = 1455
 	}
-
 	regiment = {
 		name = "5. Brigada Colonial"
 		type = infantry
-		home = 1463
-	}
-	
-	regiment = {
-		name = "6. Brigada Colonial"
-		type = artillery
-		home = 1456
-	}
-	
-	regiment = {
-		name = "7. Brigada Colonial"
-		type = artillery
 		home = 1457
 	}
-	
 	regiment = {
-		name = "1. Brigada"
-		type = artillery
-		home = 513
+		name = "6. Brigada Colonial"
+		type = infantry
+		home = 1463
 	}
-	
 	regiment = {
-		name = "2. Brigada"
-		type = artillery
-		home = 509
+		name = "7. Brigada Colonial"
+		type = infantry
+		home = 1461
 	}
-	
 	regiment = {
-		name = "3. Brigada"
+		name = "8. Brigada Colonial"
 		type = artillery
-		home = 474
+		home = 1462
+	}
+	regiment = {
+		name = "9. Brigada Colonial"
+		type = artillery
+		home = 1460
 	}
 }
 
 navy = {
-	name = "Armada Real Espanola"
-	location = 506
+	name = "Armada de Cuba"
+	location = 2209
 	
 	ship = {
 		name = "Santiago"
 		type = manowar
 	}
-	
 	ship = {
-		name = "Hesperides"
+		name = "Granada"
 		type = manowar
 	}
-	
 	ship = {
-		name = "Centinela"
+		name = "Madrid"
 		type = manowar
 	}
-	
 	ship = {
-		name = "Isla de Cuba"
+		name = "Bogota"
+		type = manowar
+	}
+	ship = {
+		name = "Quito"
+		type = manowar
+	}
+	ship = {
+		name = "Bogota"
 		type = frigate
 	}
-	
 	ship = {
-		name = "Cristobal Colon"
+		name = "Havana"
 		type = frigate
 	}
-	
 	ship = {
-		name= "1a Flotilla de Transporte"
-		type = clipper_transport
+		name = "San Juan"
+		type = frigate
+	}
+	ship = {
+		name = "San Salvador"
+		type = frigate
+	}
+	ship = {
+		name = "Zaragoza"
+		type = frigate
+	}
+	ship = {
+		name = "Sevilla"
+		type = frigate
+	}
+	ship = {
+		name = "Charles"
+		type = frigate
+	}
+	ship = {
+		name = "Ferdinand"
+		type = frigate
+	}
+	ship = {
+		name = "Isabella"
+		type = frigate
+	}
+	ship = {
+		name = "Castille"
+		type = frigate
 	}
 
 	ship = {
@@ -389,36 +283,52 @@ navy = {
 		name= "3a Flotilla de Transporte"
 		type = clipper_transport
 	}
-	
 	ship = {
-		name = "Alerta"
-		type = manowar
+		name= "4a Flotilla de Transporte"
+		type = clipper_transport
 	}
-	
+
 	ship = {
-		name = "San Fernando"
-		type = manowar
+		name= "5a Flotilla de Transporte"
+		type = clipper_transport
 	}
-	
 	ship = {
-		name = "Legazpi"
-		type = manowar
+		name= "6a Flotilla de Transporte"
+		type = clipper_transport
 	}
+
+	ship = {
+		name= "7a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "8a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "9a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "10a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "11a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Armada de Filipinas"
+	location = 1455
 	
 	ship = {
 		name = "Victoria"
 		type = frigate
 	}
-	
-	ship = {
-		name = "Nuestra Senora del Patrocinio"
-		type = frigate
-	}
-	
-	ship = {
-		name= "1a Flotilla de Transporte"
-		type = clipper_transport
-	}
 
 	ship = {
 		name= "2a Flotilla de Transporte"
@@ -429,52 +339,6 @@ navy = {
 		name= "3a Flotilla de Transporte"
 		type = clipper_transport
 	}
-	
-	ship = {
-		name= "San Raimundo"
-		type = manowar
-	}
-
-	ship = {
-		name= "Heroe"
-		type = manowar
-	}
-
-	ship = {
-		name= "San Pablo"
-		type = manowar
-	}
-
-	ship = {
-		name= "Ceres"
-		type = frigate
-	}
-
-	ship = {
-		name= "Gloria"
-		type = frigate
-	}
-
-	ship = {
-		name= "Nuestra Senora de Asuncion"
-		type = frigate
-	}
-
-	ship = {
-		name= "Nuestra Senora de Atocha"
-		type = frigate
-	}
-
-	ship = {
-		name= "Santa Sabina"
-		type = frigate
-	}
-
-	ship = {
-		name= "1a Flotilla de Transporte"
-		type = clipper_transport
-	}
-
 	ship = {
 		name= "2a Flotilla de Transporte"
 		type = clipper_transport
@@ -484,9 +348,31 @@ navy = {
 		name= "3a Flotilla de Transporte"
 		type = clipper_transport
 	}
-	
 	ship = {
-		name= "4a Flotilla de Transporte"
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
 		type = clipper_transport
 	}
 }

@@ -94,7 +94,7 @@ political_decisions = {
 					tag = AUS
 					tag = KUK
 					tag = TUR
-					tag = ENG
+					tag = GBR
 				}
 			}
 		}

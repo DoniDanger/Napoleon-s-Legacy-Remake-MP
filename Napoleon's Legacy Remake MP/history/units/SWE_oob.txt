@@ -222,7 +222,7 @@ army = {
 
 army = {
 	name = "Baltics Army"
-	location = 357
+	location = 354
 	regiment = {
 		name= "3.1Svea Livgarde"
 		type = artillery

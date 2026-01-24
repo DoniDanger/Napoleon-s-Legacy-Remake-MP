@@ -3,7 +3,10 @@ political_decisions = {
 	ENG_ireland = { 
 		picture = ireland_decision
 		potential = {
-			tag = ENG
+			OR = {
+				tag = GBR
+				tag = BRI
+			}
 			NOT = { accepted_culture = irish } 
 		}
 		allow = { 
@@ -13,7 +16,7 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
-							OR = {
+							AND = {
 								vassal_of = THIS
 								in_sphere = THIS
 							}
@@ -29,13 +32,15 @@ political_decisions = {
 					add_core = THIS
 				} 
 			} 
-			#any_country = {
-			#	limit = {
-			#		tag = IRE 
-			#		ai = yes
-			#	}
-			#	ENG = { inherit = IRE }
-			#}
+			any_country = {
+				limit = {
+					tag = IRE 
+					ai = yes
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+				THIS = { inherit = IRE }
+			}
 			add_accepted_culture = irish
 			prestige = 15
 		}
@@ -44,11 +49,59 @@ political_decisions = {
     na_expansion = {
 		picture = canada_decision
 		potential = {
-			tag = ENG
-			NOT = {accepted_culture = anglo_canadian}
+			tag = BRI
+			NOT = {has_country_flag = canadian_expansion}
 		}
 		allow = {
-			CAN = {ai = yes}
+			OR = {
+				CAN = {ai = yes}
+				CAN = { exists = no }
+			}
+			war = no
+			CAN = {
+				all_core = {
+                    				OR = {
+                       				owned_by = THIS
+                       					owner = {
+                            					OR = {
+                               						in_sphere = THIS
+                                						vassal_of = THIS
+                            					}
+                        				}
+						empty = yes
+                    				}	
+				}
+			}
+			OR = {
+				state_n_government = 1
+				has_country_flag = bri_capital_canada
+			}
+		}
+		effect = {
+			inherit = CAN
+			CAN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = canadian_expansion
+			add_accepted_culture = anglo_canadian
+           	add_accepted_culture = french_canadian
+			prestige = 20
+		}
+	}
+	
+	na_expansion_gbr = {
+		picture = canada_decision
+		potential = {
+			tag = GBR
+			NOT = {has_country_flag = canadian_expansion }
+		}
+		allow = {
+			OR = {
+				CAN = {ai = yes}
+				CAN = { exists = no }
+			}
 			war = no
 			CAN = {
 				all_core = {
@@ -73,7 +126,7 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			set_country_flag = hawaii_killers
+			set_country_flag = canadian_expansion
 			add_accepted_culture = anglo_canadian
            			add_accepted_culture = french_canadian
 			prestige = 20

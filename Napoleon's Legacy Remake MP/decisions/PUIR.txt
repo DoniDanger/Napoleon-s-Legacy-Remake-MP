@@ -64,11 +64,6 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			NOT = { 
-				TUR = { 
-					alliance_with = ENG 
-				} 
-			}
 			OR = {
 				TUR = { war_with = RUS }
 				TUR = { war_with = AUS }
@@ -187,7 +182,11 @@ political_decisions = {
 	intervene_in_lagos = {
 		picture = map_africa
 		potential = {
-#			tag = ENG
+#			OR = {	
+				tag = GBR
+				tag = BRI
+			}
+			owns = 300
 			1923 = {
 				OR = {
 					empty = yes

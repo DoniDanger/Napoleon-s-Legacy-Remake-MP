@@ -2,9 +2,9 @@ capital = 263
 primary_culture = irish
 religion = catholic
 government = democracy
-plurality = 0.1
+plurality = 10
 nationalvalue = nv_order
-literacy = 0.55
+literacy = 0.42
 civilized = yes
 
 

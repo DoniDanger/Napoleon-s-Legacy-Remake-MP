@@ -3,7 +3,7 @@
 country_event = {
 	id = 600034
 	trigger = {
-		tag = GBR
+		tag = BRI
 		NOT = {year = 1837}
 	}
 
@@ -17,7 +17,32 @@ country_event = {
 	desc = "EVTDESC600034"
 	picture = "debate"
     option = {
-        name = "Establish the Capital in South Africa (Will stop you from getting immigrants)"
+        name = "The Commonwealth is led from Canada. (Canada integration is quicker)"
+        any_pop = {
+            limit = {
+                culture = anglo_canadian
+            }
+			militancy=-2
+			consciousness=-2
+		}
+		all_core = {
+			limit = {
+					OR = {
+						is_core = CAN
+					}
+					NOT = { life_rating = 40 }
+				}
+				life_rating = 5
+		}
+        BRI = {capital = 46}
+        clr_country_flag = new_world_nation
+		set_country_flag = bri_capital_canada
+        ai_chance = {
+			factor = 0.6
+    	}
+	}
+	option = {
+        name = "The Commonwealth will span the globe."
         any_pop = {
             limit = {
                 culture = boer
@@ -27,18 +52,20 @@ country_event = {
 		}
 		SAF = {
             all_core = {
-                add_core = GBR
+                add_core = BRI
             }
         }
         add_accepted_culture = boer
-        GBR = {capital = 2087}
+        BRI = {capital = 46}
         clr_country_flag = new_world_nation
+		set_country_flag = bri_evil_saf
         ai_chance = {
-			factor = 0.4
+			factor = 0
     	}
 	}
 	option = {
-        name = "Keep the Capital in Sydney"
+        name = "Move the the Capital to Sydney (Gives you new world nation immigrant bonus)"
+		BRI = {capital = 2468}
         any_pop = {
             limit = {
                 culture = british
@@ -53,12 +80,17 @@ country_event = {
 		}
 		all_core = {
 			limit = {
+					OR = {
+						is_core = AST
+						is_core = NZL
+					}
 					NOT = { life_rating = 40 }
 				}
 				life_rating = 10
 		}
+		set_country_flag = new_world_nation
         ai_chance = {
-			factor = 0.6
+			factor = 0.4
     	}
 	}
 }

@@ -2,6 +2,19 @@ color = { 173  242  175 }
 graphical_culture = Generic
 
 party = {
+	name = "Partido Liberacion"
+	start_date = 1830.1.1
+	end_date = 1990.1.1
+
+	ideology = conservative
+
+	economic_policy = state_capitalism
+	trade_policy = protectionism
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
+	war_policy = pro_military
+}
+party = {
 	name = "MEX_conservative"
 	start_date = 1830.1.1
 	end_date = 2000.1.1

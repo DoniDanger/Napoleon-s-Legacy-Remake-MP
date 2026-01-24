@@ -1,0 +1,221 @@
+political_decisions = {
+	accept_java = {
+		potential = {
+			tag = DUT
+			any_owned_province = {
+				is_core = JAV
+			}
+			NOT = {
+				has_country_flag = accepted_javan
+			}
+		}
+
+		allow = {
+			NOT = {
+				exists = JAV
+			}
+			state_n_government = 1
+		}
+
+		effect = {
+			add_accepted_culture = javan
+			capital = 1413
+			set_country_flag = accepted_javan
+			any_pop = {
+				limit = {
+					OR = {
+						culture = javan
+					}
+				}
+				militancy = -2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	quell_tensions_saf = {
+		potential = {
+			tag = DUT
+			any_owned_province = {
+				is_core = SAF
+			}
+			NOT = {
+				has_country_flag = quelled_tensions_saf
+			}
+		}
+
+		allow = {
+			war = no
+			ideological_thought = 1
+		}
+
+		effect = {
+			prestige = -5
+			any_pop = {
+				limit = {
+					OR = {
+						culture = boer
+					}
+				}
+				militancy = 8
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						culture = khoikhoi
+					}
+				}
+				militancy = -4
+			}
+			add_accepted_culture = khoikhoi
+			set_country_flag = quelled_tensions_saf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	institute_monarchy = {
+		potential = {
+			tag = DUT
+			government = presidential_dictatorship
+		}
+
+		allow = {
+			invention = authoritarianism
+		}
+
+		effect = {
+			government = absolute_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	inspire_dutch_nationalism = {
+		potential = {
+			tag = DUT
+			NOT = {
+				has_country_flag = inspired_dutch_nationalism
+			}
+		}
+
+		allow = {
+			war = no
+			any_owned_province = {
+				is_core = NET
+			}
+		}
+
+		effect = {
+			NET = { all_core = { add_core = THIS }}
+			prestige = 15
+			set_country_flag = inspired_dutch_nationalism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	move_home = {
+		potential = {
+			tag = DUT
+			owns = 375
+			NOT = {
+				has_country_flag = returned_home
+			}
+		}
+
+		allow = {
+			owns = 383
+			owns = 375
+			owns = 377
+			owns = 378
+			owns = 382
+			owns = 386
+			owns = 385
+			owns = 384
+			owns = 381
+			owns = 380
+			owns = 379
+			owns = 376
+		}
+
+		effect = {
+			capital = 375
+			prestige = 50
+			set_country_flag = returned_home
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	claim_flanders = {
+		potential = {
+			tag = DUT
+			owns = 375
+			has_country_flag = returned_home
+			NOT = {
+				has_country_flag = flanders_claimed
+			}
+		}
+
+		allow = {
+			owns = 383
+			owns = 375
+			owns = 377
+			owns = 378
+			owns = 382
+			owns = 386
+			owns = 385
+			owns = 384
+			owns = 381
+			owns = 380
+			owns = 379
+			owns = 376
+		}
+
+		effect = {
+			388 = {
+				add_core = DUT
+			}
+			389 = {
+				add_core = DUT
+			}
+			387 = {
+				add_core = DUT
+			}
+			390 = {
+				add_core = DUT
+			}
+			391 = {
+				add_core = DUT
+			}
+			set_country_flag = flanders_claimed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	integrating_philippines = {
+		potential = {
+			tag = DUT
+			exists = PHI
+			has_country_flag = philippines_war
+			    }
+		allow = {
+				
+			}
+		effect = {
+			prestige = 5
+				DUT = { inherit = PHI }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

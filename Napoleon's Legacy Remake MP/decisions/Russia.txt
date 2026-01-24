@@ -343,7 +343,7 @@ political_decisions = {
 				NOT = { rank = 8 } #Fell out of GP status
 				has_recently_lost_war = yes #Historical Condition
 				NOT = { total_amount_of_divisions = 100 } #Weak state of military by Russian standards
-				ENG = { stronger_army_than = THIS } #United Kingdom has a bigger army
+				GBR = { stronger_army_than = THIS } #United Kingdom has a bigger army
 			}
 		}
 

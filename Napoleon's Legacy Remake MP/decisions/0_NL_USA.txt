@@ -48,6 +48,7 @@ political_decisions = {
 		allow = { 
 			has_country_flag = USAlouisiana
 			nationalism_n_imperialism = 1
+			year = 1860
 			71 = {
 				owner = { 
 					OR = { 
