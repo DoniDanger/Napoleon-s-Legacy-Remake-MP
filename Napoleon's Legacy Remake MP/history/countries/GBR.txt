@@ -13,7 +13,6 @@ literacy = 0.52
 civilized = yes 
 prestige = 40
 schools = naval_tech_school
-set_country_flag = new_world_nation
 oob = "GBR_oob.txt"
 
 

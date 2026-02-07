@@ -36,6 +36,9 @@ political_decisions = {
 			tag = BRI
 			rank = 8
 			owns = 46
+			NOT = {
+				has_country_flag = integrated_new_england
+			}
 		}
 		allow = {
 			war = no
@@ -64,7 +67,7 @@ political_decisions = {
 				}
 				add_core = THIS
 			}
-			set_global_flag = the_Britains_reunified
+			set_country_flag = integrated_new_england
 		}
 		ai_will_do = {
 			factor = 1

@@ -5,8 +5,11 @@ political_decisions = {
 			NOT = { has_country_flag = regno_uni }
 		}
 		allow = {
-			invention = national_fraternity
-			is_greater_power = yes
+			OR = {
+				is_greater_power = yes
+				impressionism = 1
+				invention = national_fraternity
+			}
 			URU = { exists = no }
 		}
 		effect = {
@@ -33,7 +36,13 @@ political_decisions = {
 			owns = 2447
 		}
 		allow = {
-			impressionism = 1
+			OR = {
+				nationalism_n_imperialism = 1
+				AND = {
+					is_greater_power = yes
+					state_n_government = 1
+				}
+			}
 		}
 		effect = {
 			capital = 2447

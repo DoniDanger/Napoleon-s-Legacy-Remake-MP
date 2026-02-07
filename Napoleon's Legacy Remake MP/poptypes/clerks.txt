@@ -268,29 +268,6 @@ promote_to =
 			NOT = { is_primary_culture = yes }
 		}
 		group = {
-		modifier = {
-			factor = -200 
-			state_scope = {
-				total_pops = 800000
-				bureaucrats = 0.035 
-			}
-		}
-		modifier = {
-			factor = -200 
-			state_scope = {
-				total_pops = 2000000
-				bureaucrats = 0.025 
-			}
-		}
-		modifier = {
-			factor = -200 
-			state_scope = {
-				total_pops = 5000000
-				bureaucrats = 0.020 
-			}
-		}
-		}
-		group = {
 			modifier = {
 				factor =  0.25
 				literacy = 0.40
